@@ -23,7 +23,7 @@
         <script>
             // (1) COMMENTAIRES => // ou /**/
             // (2) AFFICHAGE
-            document.write("<h1> (2) Affichage en JavaScript</h1>");
+            document.write("<h1>-(2) Affichage en JavaScript</h1>");
             document.write("<br>");
             // retour à la ligne
             // alert("salut");
@@ -129,15 +129,176 @@
             document.write("<br>");
 
             // *******************************
-            // (4) les CONSTANTES
+            // (5) les CONSTANTES
             document.write("<h2>(5) Les CONSTANTES</h2>");
+            // le contenu des const ne peut pas être modifié
+            // on écrit svt tout en MAJUSCULE et sépare les mots par _
+            const BOUGE_PAS = "ma constatnte impossible de modifier";
+            document.write(BOUGE_PAS);
+            document.write("<br>");
+
+            // le mot const n'est parfois pas compatible avec tous les navigateurs, donc pas convention, il est possible de créer une const de cette manière:
+            let NE_PAS_MODIFIER = "ma variable à NE PAS MODIFIER";
+            document.write("<br>");
 
             // *******************************
+            // (6) CONCATENATION
+            document.write("<h2>(6) La concaténation (mettre bout à bout)</h2>");
+            let prenom1 = "Bruce";
+            let nom1 = "WAYNE";
+            document.write(prenom1 + nom1);
+            document.write("<br>");
+            document.write(prenom1 + " " + nom1);
+            document.write("<br>");
+
+            // cette écriture permet de mettre only "Bruce" en gras, attention à ne pas mettre le nom des variables dans les double-quotes
+            document.write("<strong>" + prenom1 + "</strong>" + " " + nom1);
+            document.write("<br>");
 
             // *******************************
+            // (7) OPÉRATEURS ARITHEMÉTIQUES
+            document.write("<h2>(7) Les opérateurs arithmétiques</h2>");
+            let result1 = 10 + 5;
+            document.write(result1 + "<br>");
+            let result2 = 10 * 5;
+            document.write(result2 + "<br>");
+            let result3 = 10 / 5;
+            document.write(result3 + "<br>");
+            let result4 = 10 - 5;
+            document.write(result4 + "<br>");
+            let result5 = 10 % 5;
+            document.write(result5 + "<br>");
+            let result6 = 10 % 3;
+            document.write(result6 + "<br>");
 
             // *******************************
+            // Autres manières de présenter les calculs  +=  -=  *=  /=  %=
+            let chiffre1 = 10;
+            let chiffre2 = 5;
+            let resultChiffres = chiffre1 + chiffre2;
+            document.write(resultChiffres + "<br>");
 
+            chiffre1 = chiffre1 + 8;
+            document.write(chiffre1 + "<br>");
+            chiffre1 += 12;
+            document.write(chiffre1 + "<br>");
+
+            // *******************************
+            // (8) LES CONDITIONS
+            document.write("<h2>(8) Les conditions</h2>");
+            let a = 10;
+            let b = 5;
+            let c = 2;
+
+            // IF - ELSE
+            document.write("IF - ELSE");
+            document.write("<br>");
+            if(a>b){
+                document.write("a is bigger than b");
+            } else {
+                document.write("a is not bigger than b");
+            }
+            document.write("<br>");
+            document.write("<br>");
+
+            // IF - AND (&&)
+            // both conditions have to be met
+            document.write("IF - AND (&&)");
+            document.write("<br>");
+            if(a>b && b>c) {
+                document.write("les deux conditions sont bien vérifiées");
+            } else {
+                document.write("l'une ou l'autre des conditions n'est pas vérifiée");
+            }
+            document.write("<br>");
+            document.write("<br>");
+
+            // IF - OR (||)
+            // either one of the conditions is met, then it is OK
+            document.write("IF - OR (||)");
+            document.write("<br>");
+            // ici le double égal (==) est un opérateur de comparaison, je dis à la machine de comparer la valeur de a avec le chiffre 9, et si je veux comparer la valeur + le type, alors faut utiliser la comparaison stricte (===)
+            if(a == 9 || b>c) {
+                document.write("ok pour au moins l'une des conditions");
+            } 
+            document.write("<br>");
+            document.write("<br>");
+            
+            // *******************************
+            // IF - ELSE IF - ELSE
+            document.write("IF - ELSE IF - ELSE");
+            document.write("<br>");
+            if(a = 8) {
+                document.write("1 - A est égal à 8");
+            } else if (a != 10) {
+                document.write("2 - A est différent de 10");
+            } else {
+                document.write("Les deux conditions ne sont pas vérifiées");
+            }
+            document.write("<br>");
+            document.write("<br>");
+
+            // *******************************
+            document.write("IF - ELSE (to uncomment, to see the 2 results)");
+            document.write("<br>");
+            // exercice (homme-femme)
+            // let reponse = prompt("Quel est votre genre?");
+            // console.log(reponse);
+            // if(reponse == "homme"){
+            //     document.write("vous êtes un homme");
+            // } else if(reponse == "femme") {
+            //     document.write("vous êtes une femme");
+            // } 
+            // document.write("<br>");
+            // document.write("<br>");
+            // ***********
+            // let reponse1 = prompt("Quel est votre genre?");
+            // console.log(reponse1);
+            // if(reponse1 == "homme"){
+            //     document.write("vous êtes un homme");
+            // } else {
+            //     document.write("vous êtes une femme");
+            // } 
+            document.write("<br>");
+            document.write("<br>");
+
+            // *******************************
+            document.write("IF - ELSE IF - ELSE");
+            document.write("<br>");
+            // exercice (homme-femme-transgenre)
+            let reponse2 = prompt("Quel est votre genre?");
+            console.log(reponse2);
+            if(reponse2 == "homme"){
+                document.write("vous êtes un homme");
+            } else if (reponse2 == "femme"){
+                document.write("vous êtes une femme");
+            } else {
+                document.write("vous êtes transgenre");
+            }
+            document.write("<br>");
+            document.write("<br>");
+
+
+            // *******************************
+            // (9) LES CONDITIONS
+            document.write("<h2>(9) Les opérateurs</h2>");
+            document.write("<br>");
+            // (==) même valeur
+            // (===) même valeur et même type, striectement égal
+            // (!=) renvoie TRUE si les opérandes pas égales
+            // (!==) renvoie TRUE si les opérandes pas égales, et pas même TYPE
+            // (>)  (<)  (>=)  (<=)
+            // Conclusion: une condition renvoie tjrs TRUE ou FALSE, et les instructions de la condition (le code situé dans els accolades) ne s'exécutent QUE si la condition renvoie TRUE.
+            // JavaScripot compte trois opérateurs logiques:
+                // - AND &&
+                // - OR ||
+                // - NOT !
+
+            // 
+
+
+
+            document.write("<br>");
             document.write("<br>");
             document.write("<br>");
 
