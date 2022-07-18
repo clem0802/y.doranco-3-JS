@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>2022.07.18 - OUTILS - 1er "JavaScript"</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+        <main></main>
+        <footer></footer>
+
+
+        <!-- https://www.iamag.co/the-art-of-the-sea-beast-25-concept-art/ -->
+        <!-- to visualize a RWD container -->
+        <!-- ⌥+z (hors sujet) -->
+
+        <script>
+            // (1) COMMENTAIRES => // ou /**/
+            // (2) AFFICHAGE
+            document.write("<h1> (2) Affichage en JavaScript</h1>");
+            document.write("<br>");
+            // retour à la ligne
+            // alert("salut");
+
+            // confirm("Êtes-vous sûr?")
+            // "confirm" est pratique si on souhaite poser une question à notre user et on peut éventuellement récupérer l'info dans une variable
+
+            // prompt("Comment vous appelez-vous?");
+            // "prompt" pose une question à mon user et présente un espace dans lequel mon user peut taper sa réponse, il est également possible de récupérer cette réponse dans une variable
+
+            // console.log("Je permets d'érire dans la console.");
+            // console.info("Je suis pareil que le console.log mais j'affiche également un i");
+            // console.log() et console.info() permettent principalement de débugger notre code, ils sont svt associés à une variable pour vérifier son contenu
+
+            // *******************************
+            // (3) VARIABLES / DÉCLARATION / AFFECTATION
+            document.write("<h2>(3) Variables / Déclaration / Affectation</h2>");
+            document.write("<br>");
+            // variable: une "boîte virtuelle" dans laquelle je peux stocker une donnée, le pseudo d'unn user et l'afficher sur une page d'accueil. -- les données d'une variable peut être de différent type comme des chiffres, des lettres, des mots etc... et il existe plusieurs mots clés pour les déclarer: var, let, const
+            // il est conseillé dans une premier temps d'utiliser le mot clé "let" car une variable déclarée en "let" ne peut pas être écrasée ou redéclarée par erreur contrairement à une variable déclarée en "var"
+            // Comment déclarer une variable? (camelCase) 
+            let maVariable; 
+            document.write("<br>");
+
+            // *******************************
+            // Comment affecter une valeur à ma variable? 
+            maVariable = 10; 
+            document.write(maVariable);
+            console.log(maVariable);
+            // ça s'affiche le string "maVariable", tel quel
+            console.log("maVariable");
+            document.write("<br>");
+
+            // *******************************
+            let monAutreVariable = "Bonjour";
+            document.write(monAutreVariable);
+            console.log(monAutreVariable);
+            document.write("<br>");
+
+            // *******************************
+            // il est possible de déclarer plusieurs variables à sutie et de leur affecter une valeur en les séparant par une virgule, la dernière instruction se terminera tjrs par un ";"
+            let prenom = "Sylvie",
+                nom = "Dupont",
+                genre = "Féminin";
+            document.write(prenom, nom, genre);
+            // SylvieDupontFéminin (shown on web page)
+            console.log(prenom, nom, genre);
+            // Sylvie Dupont Féminin (shown on the console)
+            document.write("<br>");
+
+            // *******************************
+            // Comment rajouter une valeur dans une variable? 
+            let fruit = "Bananes";
+            document.write(fruit);
+            // Bananes
+            document.write("<br>");
+            fruit += " Fraises";
+            document.write(fruit);
+            // Bananes Fraises
+            document.write("<br>");
+
+            // *******************************
+            let something;
+            console.log(something);
+            document.write(something);
+            // undefined => la variable existe bien, mais pas encore de contenu
+            document.write("<br>");
+
+            // *******************************
+            // (4) les TYPES de DONNÉES
+            document.write("<h2>(4) Les Types de Données</h2>");
+            // il existe 7 types de données: number, string, boolean, null, undefined, symbol, objects
+
+            // ******************************* Numbers
+            let chiffre = 20;
+            let négatif = -15;
+            let décimal = 3.5;
+            document.write(chiffre);
+            document.write("<br>");
+            document.write(négatif);
+            document.write("<br>");
+            document.write(décimal);
+            document.write("<br>");
+
+            // ******************************* String
+            let monTexte = "voici un string";
+            let apostrophe = 'pour l\'utilisation des simple quote il sera nécessaire d\'utiliser caractère d\'échappement';
+            document.write(monTexte);
+            document.write(apostrophe);
+            document.write("<br>");
+            document.write(apostrophe);
+            document.write("<br>");
+            document.write("<br>");
+
+            // ******************************* Boolean
+            let boolean = true;
+            document.write(typeof(chiffre));
+            document.write("<br>");
+            document.write(typeof(monTexte));
+            document.write("<br>");
+            document.write(typeof(boolean));
+            document.write("<br>");
+            document.write("<br>");
+
+            // *******************************
+            // (4) les CONSTANTES
+            document.write("<h2>(5) Les CONSTANTES</h2>");
+
+            // *******************************
+
+            // *******************************
+
+            // *******************************
+
+            document.write("<br>");
+            document.write("<br>");
+
+        </script>
+
+    </body>
+</html>
+
