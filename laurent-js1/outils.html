@@ -21,289 +21,561 @@
         <!-- ⌥+z (hors sujet) -->
 
         <script>
-            // (1) COMMENTAIRES => // ou /**/
-            // (2) AFFICHAGE
-            document.write("<h1>-(2) Affichage en JavaScript</h1>");
-            document.write("<br>");
-            // retour à la ligne
-            // alert("salut");
+// *******************************************************
+// *******************************************************
+// 2022.07.18 (1er jour)
 
-            // confirm("Êtes-vous sûr?")
-            // "confirm" est pratique si on souhaite poser une question à notre user et on peut éventuellement récupérer l'info dans une variable
+        // (1) COMMENTAIRES => // ou /**/
+        // (2) AFFICHAGE
+        document.write("<h1>-(2) Affichage en JavaScript</h1>");
+        document.write("<br>");
+        // retour à la ligne
+        // alert("salut");
 
-            // prompt("Comment vous appelez-vous?");
-            // "prompt" pose une question à mon user et présente un espace dans lequel mon user peut taper sa réponse, il est également possible de récupérer cette réponse dans une variable
+        // confirm("Êtes-vous sûr?")
+        // "confirm" est pratique si on souhaite poser une question à notre user et on peut éventuellement récupérer l'info dans une variable
 
-            // console.log("Je permets d'érire dans la console.");
-            // console.info("Je suis pareil que le console.log mais j'affiche également un i");
-            // console.log() et console.info() permettent principalement de débugger notre code, ils sont svt associés à une variable pour vérifier son contenu
+        // prompt("Comment vous appelez-vous?");
+        // "prompt" pose une question à mon user et présente un espace dans lequel mon user peut taper sa réponse, il est également possible de récupérer cette réponse dans une variable
 
-            // *******************************
-            // (3) VARIABLES / DÉCLARATION / AFFECTATION
-            document.write("<h2>(3) Variables / Déclaration / Affectation</h2>");
-            document.write("<br>");
-            // variable: une "boîte virtuelle" dans laquelle je peux stocker une donnée, le pseudo d'unn user et l'afficher sur une page d'accueil. -- les données d'une variable peut être de différent type comme des chiffres, des lettres, des mots etc... et il existe plusieurs mots clés pour les déclarer: var, let, const
-            // il est conseillé dans une premier temps d'utiliser le mot clé "let" car une variable déclarée en "let" ne peut pas être écrasée ou redéclarée par erreur contrairement à une variable déclarée en "var"
-            // Comment déclarer une variable? (camelCase) 
-            let maVariable; 
-            document.write("<br>");
+        // console.log("Je permets d'érire dans la console.");
+        // console.info("Je suis pareil que le console.log mais j'affiche également un i");
+        // console.log() et console.info() permettent principalement de débugger notre code, ils sont svt associés à une variable pour vérifier son contenu
 
-            // *******************************
-            // Comment affecter une valeur à ma variable? 
-            maVariable = 10; 
-            document.write(maVariable);
-            console.log(maVariable);
-            // ça s'affiche le string "maVariable", tel quel
-            console.log("maVariable");
-            document.write("<br>");
+        // *******************************
+        // (3) VARIABLES / DÉCLARATION / AFFECTATION
+        document.write("<h2>(3) Variables / Déclaration / Affectation</h2>");
+        document.write("<br>");
+        // variable: une "boîte virtuelle" dans laquelle je peux stocker une donnée, le pseudo d'unn user et l'afficher sur une page d'accueil. -- les données d'une variable peut être de différent type comme des chiffres, des lettres, des mots etc... et il existe plusieurs mots clés pour les déclarer: var, let, const
+        // il est conseillé dans une premier temps d'utiliser le mot clé "let" car une variable déclarée en "let" ne peut pas être écrasée ou redéclarée par erreur contrairement à une variable déclarée en "var"
+        // Comment déclarer une variable? (camelCase) 
+        let maVariable; 
+        document.write("<br>");
 
-            // *******************************
-            let monAutreVariable = "Bonjour";
-            document.write(monAutreVariable);
-            console.log(monAutreVariable);
-            document.write("<br>");
+        // *******************************
+        // Comment affecter une valeur à ma variable? 
+        maVariable = 10; 
+        document.write(maVariable);
+        console.log(maVariable);
+        // ça s'affiche le string "maVariable", tel quel
+        console.log("maVariable");
+        document.write("<br>");
 
-            // *******************************
-            // il est possible de déclarer plusieurs variables à sutie et de leur affecter une valeur en les séparant par une virgule, la dernière instruction se terminera tjrs par un ";"
-            let prenom = "Sylvie",
-                nom = "Dupont",
-                genre = "Féminin";
-            document.write(prenom, nom, genre);
-            // SylvieDupontFéminin (shown on web page)
-            console.log(prenom, nom, genre);
-            // Sylvie Dupont Féminin (shown on the console)
-            document.write("<br>");
+        // *******************************
+        let monAutreVariable = "Bonjour";
+        document.write(monAutreVariable);
+        console.log(monAutreVariable);
+        document.write("<br>");
 
-            // *******************************
-            // Comment rajouter une valeur dans une variable? 
-            let fruit = "Bananes";
-            document.write(fruit);
-            // Bananes
-            document.write("<br>");
-            fruit += " Fraises";
-            document.write(fruit);
-            // Bananes Fraises
-            document.write("<br>");
+        // *******************************
+        // il est possible de déclarer plusieurs variables à sutie et de leur affecter une valeur en les séparant par une virgule, la dernière instruction se terminera tjrs par un ";"
+        let prenom = "Sylvie",
+            nom = "Dupont",
+            genre = "Féminin";
+        document.write(prenom, nom, genre);
+        // SylvieDupontFéminin (shown on web page)
+        console.log(prenom, nom, genre);
+        // Sylvie Dupont Féminin (shown on the console)
+        document.write("<br>");
 
-            // *******************************
-            let something;
-            console.log(something);
-            document.write(something);
-            // undefined => la variable existe bien, mais pas encore de contenu
-            document.write("<br>");
+        // *******************************
+        // Comment rajouter une valeur dans une variable? 
+        let fruit = "Bananes";
+        document.write(fruit);
+        // Bananes
+        document.write("<br>");
+        fruit += " Fraises";
+        document.write(fruit);
+        // Bananes Fraises
+        document.write("<br>");
 
-            // *******************************
-            // (4) les TYPES de DONNÉES
-            document.write("<h2>(4) Les Types de Données</h2>");
-            // il existe 7 types de données: number, string, boolean, null, undefined, symbol, objects
+        // *******************************
+        let something;
+        console.log(something);
+        document.write(something);
+        // undefined => la variable existe bien, mais pas encore de contenu
+        document.write("<br>");
 
-            // ******************************* Numbers
-            let chiffre = 20;
-            let négatif = -15;
-            let décimal = 3.5;
-            document.write(chiffre);
-            document.write("<br>");
-            document.write(négatif);
-            document.write("<br>");
-            document.write(décimal);
-            document.write("<br>");
+        // *******************************
+        // (4) les TYPES de DONNÉES
+        document.write("<h2>(4) Les Types de Données</h2>");
+        // il existe 7 types de données: number, string, boolean, null, undefined, symbol, objects
 
-            // ******************************* String
-            let monTexte = "voici un string";
-            let apostrophe = 'pour l\'utilisation des simple quote il sera nécessaire d\'utiliser caractère d\'échappement';
-            document.write(monTexte);
-            document.write(apostrophe);
-            document.write("<br>");
-            document.write(apostrophe);
-            document.write("<br>");
-            document.write("<br>");
+        // ******************************* Numbers
+        let chiffre = 20;
+        let négatif = -15;
+        let décimal = 3.5;
+        document.write(chiffre);
+        document.write("<br>");
+        document.write(négatif);
+        document.write("<br>");
+        document.write(décimal);
+        document.write("<br>");
 
-            // ******************************* Boolean
-            let boolean = true;
-            document.write(typeof(chiffre));
-            document.write("<br>");
-            document.write(typeof(monTexte));
-            document.write("<br>");
-            document.write(typeof(boolean));
-            document.write("<br>");
-            document.write("<br>");
+        // ******************************* String
+        let monTexte = "voici un string";
+        let apostrophe = 'pour l\'utilisation des simple quote il sera nécessaire d\'utiliser caractère d\'échappement';
+        document.write(monTexte);
+        document.write(apostrophe);
+        document.write("<br>");
+        document.write(apostrophe);
+        document.write("<br>");
+        document.write("<br>");
 
-            // *******************************
-            // (5) les CONSTANTES
-            document.write("<h2>(5) Les CONSTANTES</h2>");
-            // le contenu des const ne peut pas être modifié
-            // on écrit svt tout en MAJUSCULE et sépare les mots par _
-            const BOUGE_PAS = "ma constatnte impossible de modifier";
-            document.write(BOUGE_PAS);
-            document.write("<br>");
+        // ******************************* Boolean
+        let boolean = true;
+        document.write(typeof(chiffre));
+        document.write("<br>");
+        document.write(typeof(monTexte));
+        document.write("<br>");
+        document.write(typeof(boolean));
+        document.write("<br>");
+        document.write("<br>");
 
-            // le mot const n'est parfois pas compatible avec tous les navigateurs, donc pas convention, il est possible de créer une const de cette manière:
-            let NE_PAS_MODIFIER = "ma variable à NE PAS MODIFIER";
-            document.write("<br>");
+        // *******************************
+        // (5) les CONSTANTES
+        document.write("<h2>(5) Les CONSTANTES</h2>");
+        // le contenu des const ne peut pas être modifié
+        // on écrit svt tout en MAJUSCULE et sépare les mots par _
+        const BOUGE_PAS = "ma constatnte impossible de modifier";
+        document.write(BOUGE_PAS);
+        document.write("<br>");
 
-            // *******************************
-            // (6) CONCATENATION
-            document.write("<h2>(6) La concaténation (mettre bout à bout)</h2>");
-            let prenom1 = "Bruce";
-            let nom1 = "WAYNE";
-            document.write(prenom1 + nom1);
-            document.write("<br>");
-            document.write(prenom1 + " " + nom1);
-            document.write("<br>");
+        // le mot const n'est parfois pas compatible avec tous les navigateurs, donc pas convention, il est possible de créer une const de cette manière:
+        let NE_PAS_MODIFIER = "ma variable à NE PAS MODIFIER";
+        document.write("<br>");
 
-            // cette écriture permet de mettre only "Bruce" en gras, attention à ne pas mettre le nom des variables dans les double-quotes
-            document.write("<strong>" + prenom1 + "</strong>" + " " + nom1);
-            document.write("<br>");
+        // *******************************
+        // (6) CONCATENATION
+        document.write("<h2>(6) La concaténation (mettre bout à bout)</h2>");
+        let prenom1 = "Bruce";
+        let nom1 = "WAYNE";
+        document.write(prenom1 + nom1);
+        document.write("<br>");
+        document.write(prenom1 + " " + nom1);
+        document.write("<br>");
 
-            // *******************************
-            // (7) OPÉRATEURS ARITHEMÉTIQUES
-            document.write("<h2>(7) Les opérateurs arithmétiques</h2>");
-            let result1 = 10 + 5;
-            document.write(result1 + "<br>");
-            let result2 = 10 * 5;
-            document.write(result2 + "<br>");
-            let result3 = 10 / 5;
-            document.write(result3 + "<br>");
-            let result4 = 10 - 5;
-            document.write(result4 + "<br>");
-            let result5 = 10 % 5;
-            document.write(result5 + "<br>");
-            let result6 = 10 % 3;
-            document.write(result6 + "<br>");
+        // cette écriture permet de mettre only "Bruce" en gras, attention à ne pas mettre le nom des variables dans les double-quotes
+        document.write("<strong>" + prenom1 + "</strong>" + " " + nom1);
+        document.write("<br>");
 
-            // *******************************
-            // Autres manières de présenter les calculs  +=  -=  *=  /=  %=
-            let chiffre1 = 10;
-            let chiffre2 = 5;
-            let resultChiffres = chiffre1 + chiffre2;
-            document.write(resultChiffres + "<br>");
+        // *******************************
+        // (7) OPÉRATEURS ARITHEMÉTIQUES
+        document.write("<h2>(7) Les opérateurs arithmétiques</h2>");
+        let result1 = 10 + 5;
+        document.write(result1 + "<br>");
+        let result2 = 10 * 5;
+        document.write(result2 + "<br>");
+        let result3 = 10 / 5;
+        document.write(result3 + "<br>");
+        let result4 = 10 - 5;
+        document.write(result4 + "<br>");
+        let result5 = 10 % 5;
+        document.write(result5 + "<br>");
+        let result6 = 10 % 3;
+        document.write(result6 + "<br>");
 
-            chiffre1 = chiffre1 + 8;
-            document.write(chiffre1 + "<br>");
-            chiffre1 += 12;
-            document.write(chiffre1 + "<br>");
+        // *******************************
+        // Autres manières de présenter les calculs  +=  -=  *=  /=  %=
+        let chiffre1 = 10;
+        let chiffre2 = 5;
+        let resultChiffres = chiffre1 + chiffre2;
+        document.write(resultChiffres + "<br>");
 
-            // *******************************
-            // (8) LES CONDITIONS
-            document.write("<h2>(8) Les conditions</h2>");
-            let a = 10;
-            let b = 5;
-            let c = 2;
+        chiffre1 = chiffre1 + 8;
+        document.write(chiffre1 + "<br>");
+        chiffre1 += 12;
+        document.write(chiffre1 + "<br>");
 
-            // IF - ELSE
-            document.write("IF - ELSE");
-            document.write("<br>");
-            if(a>b){
-                document.write("a is bigger than b");
-            } else {
-                document.write("a is not bigger than b");
-            }
-            document.write("<br>");
-            document.write("<br>");
+        // *******************************
+        // (8) LES CONDITIONS
+        document.write("<h2>(8) Les conditions</h2>");
+        let a = 10;
+        let b = 5;
+        let c = 2;
 
-            // IF - AND (&&)
-            // both conditions have to be met
-            document.write("IF - AND (&&)");
-            document.write("<br>");
-            if(a>b && b>c) {
-                document.write("les deux conditions sont bien vérifiées");
-            } else {
-                document.write("l'une ou l'autre des conditions n'est pas vérifiée");
-            }
-            document.write("<br>");
-            document.write("<br>");
+        // IF - ELSE
+        document.write("IF - ELSE");
+        document.write("<br>");
+        if(a>b){
+            document.write("a is bigger than b");
+        } else {
+            document.write("a is not bigger than b");
+        }
+        document.write("<br>");
+        document.write("<br>");
 
-            // IF - OR (||)
-            // either one of the conditions is met, then it is OK
-            document.write("IF - OR (||)");
-            document.write("<br>");
-            // ici le double égal (==) est un opérateur de comparaison, je dis à la machine de comparer la valeur de a avec le chiffre 9, et si je veux comparer la valeur + le type, alors faut utiliser la comparaison stricte (===)
-            if(a == 9 || b>c) {
-                document.write("ok pour au moins l'une des conditions");
-            } 
-            document.write("<br>");
-            document.write("<br>");
+        // IF - AND (&&)
+        // both conditions have to be met
+        document.write("IF - AND (&&)");
+        document.write("<br>");
+        if(a>b && b>c) {
+            document.write("les deux conditions sont bien vérifiées");
+        } else {
+            document.write("l'une ou l'autre des conditions n'est pas vérifiée");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        // IF - OR (||)
+        // either one of the conditions is met, then it is OK
+        document.write("IF - OR (||)");
+        document.write("<br>");
+        // ici le double égal (==) est un opérateur de comparaison, je dis à la machine de comparer la valeur de a avec le chiffre 9, et si je veux comparer la valeur + le type, alors faut utiliser la comparaison stricte (===)
+        if(a == 9 || b>c) {
+            document.write("ok pour au moins l'une des conditions");
+        } 
+        document.write("<br>");
+        document.write("<br>");
+        
+        // *******************************
+        // IF - ELSE IF - ELSE
+        document.write("IF - ELSE IF - ELSE");
+        document.write("<br>");
+        if(a = 8) {
+            document.write("1 - A est égal à 8");
+        } else if (a != 10) {
+            document.write("2 - A est différent de 10");
+        } else {
+            document.write("Les deux conditions ne sont pas vérifiées");
+        }
+        document.write("<br>");
+        document.write("<br>");
+
+        // *******************************
+        document.write("IF - ELSE (to uncomment, to see the 2 results)");
+        document.write("<br>");
+        // exercice (homme-femme)
+        // let reponse = prompt("Quel est votre genre?");
+        // console.log(reponse);
+        // if(reponse == "homme"){
+        //     document.write("vous êtes un homme");
+        // } else if(reponse == "femme") {
+        //     document.write("vous êtes une femme");
+        // } 
+        // document.write("<br>");
+        // document.write("<br>");
+        // ***********
+        // let reponse1 = prompt("Quel est votre genre?");
+        // console.log(reponse1);
+        // if(reponse1 == "homme"){
+        //     document.write("vous êtes un homme");
+        // } else {
+        //     document.write("vous êtes une femme");
+        // } 
+        document.write("<br>");
+        document.write("<br>");
+
+        // *******************************
+        document.write("IF - ELSE IF - ELSE");
+        document.write("<br>");
+        // exercice (homme-femme-transgenre)
+        // let reponse2 = prompt("Quel est votre genre?");
+        // console.log(reponse2);
+        // if(reponse2 == "homme"){
+        //     document.write("vous êtes un homme");
+        // } else if (reponse2 == "femme"){
+        //     document.write("vous êtes une femme");
+        // } else {
+        //     document.write("vous êtes transgenre");
+        // }
+        // document.write("<br>");
+        // document.write("<br>");
+
+
+        // *******************************
+        // (9) LES CONDITIONS
+        document.write("<h2>(9) Les opérateurs</h2>");
+        document.write("<br>");
+        // (==) même valeur
+        // (===) même valeur et même type, striectement égal
+        // (!=) renvoie TRUE si les opérandes pas égales
+        // (!==) renvoie TRUE si les opérandes pas égales, et pas même TYPE
+        // (>)  (<)  (>=)  (<=)
+        // Conclusion: une condition renvoie tjrs TRUE ou FALSE, et les instructions de la condition (le code situé dans els accolades) ne s'exécutent QUE si la condition renvoie TRUE.
+        // JavaScripot compte trois opérateurs logiques:
+            // - AND &&
+            // - OR ||
+            // - NOT !
+
             
-            // *******************************
-            // IF - ELSE IF - ELSE
-            document.write("IF - ELSE IF - ELSE");
-            document.write("<br>");
-            if(a = 8) {
-                document.write("1 - A est égal à 8");
-            } else if (a != 10) {
-                document.write("2 - A est différent de 10");
+
+// *******************************************************
+// *******************************************************
+// 2022.07.19 (2ème jour)
+        // *******************************
+        // (10) LES CONDITIONS
+        document.write("<h2>(10) Les Condition SWITCH</h2>");
+        let couleur = "rouge";
+        switch(couleur){
+            case "bleu": document.write("You've got bleu <br>");
+            break;
+            case "rouge": document.write("You've got red <br>");
+            break;
+            case "vert": document.write("You've got green <br>");
+            break;
+            default: document.write("You've got no color <br>");
+            break;
+        }
+
+        let color = "red";
+        if(color == "blue"){
+            console.log("You've got blue");
+            document.write("You've got bleu <br>");
+        } else if (color == "red") {
+            console.log("You've got red");
+            document.write("You've got red <br>");
+        } else if (color == "green") {
+            console.log("You've got green");
+            document.write("You've got green <br>");
+        } else {
+            console.log("You've got no color");
+            document.write("You've got no color <br>");
+        }
+
+
+        // *******************************
+        // (11) LES BOUCLES 
+        // pour éviter de RÉPÉTER les codes
+        document.write("<h2>(11) Les BOUCLES</h2>");
+        // loop WHILE
+        // initialisation de ma boucle, son point de départ
+        // tant que i est inférieur ou égal à 5, alors tu continues de boucler
+        // réponse attendue: 0---1---2---3---4---5---
+        let i = 0;
+        while(i <= 5){ 
+            // ici j'exécute
+            document.write(i + "---");
+            // incrémentation, je demande à chaque tour de boucle à ce que la valeur de "i" augmente de 1 point, donc au 1er tour de boucle i=0, au 2ème tour i=1, au 3ème i=2...
+            i++;
+        }
+
+        document.write("<br>");
+        // si je n'ai pas de WHILE, j'aurais écrit comme ça:
+        // réponse attendue: 0---1---2---3---4---5---
+        document.write(0 + "---");
+        document.write(1 + "---");
+        document.write(2 + "---");
+        document.write(3 + "---");
+        document.write(4 + "---");
+        document.write(5 + "---");
+        document.write("<br>");
+
+        // *************
+        // loop DO WHILE
+        let j = 0;
+        do {
+            document.write(j + "---");
+            j++;
+        } while (j <= 5);
+        document.write("<br>");
+
+        // *************
+        // loop FOR (1)
+        // Départ; Condition; Incrémentation
+        // réponse attendue: 0---1---2---3---4---5---
+        for(let k = 0; k<= 5; k++){
+            // ici mon script à exécuter
+            document.write(k + "---");
+        }
+        document.write("<br>");
+
+        // *************
+        // loop FOR (2) (prof Laurent)
+        // DÉPART; CONDITION; INCRÉMENTATION
+        // réponse attendue: 0---1---2---3---4---5
+        for(let m = 0; m<= 5; m++){
+            if(m == 5){
+                document.write(m);
             } else {
-                document.write("Les deux conditions ne sont pas vérifiées");
+                document.write(m + "---");
             }
-            document.write("<br>");
-            document.write("<br>");
+        }
+        document.write("<br>");
 
-            // *******************************
-            document.write("IF - ELSE (to uncomment, to see the 2 results)");
-            document.write("<br>");
-            // exercice (homme-femme)
-            // let reponse = prompt("Quel est votre genre?");
-            // console.log(reponse);
-            // if(reponse == "homme"){
-            //     document.write("vous êtes un homme");
-            // } else if(reponse == "femme") {
-            //     document.write("vous êtes une femme");
-            // } 
-            // document.write("<br>");
-            // document.write("<br>");
-            // ***********
-            // let reponse1 = prompt("Quel est votre genre?");
-            // console.log(reponse1);
-            // if(reponse1 == "homme"){
-            //     document.write("vous êtes un homme");
-            // } else {
-            //     document.write("vous êtes une femme");
-            // } 
-            document.write("<br>");
-            document.write("<br>");
+        // loop FOR (2) (moi, loool)
+        // DÉPART; CONDITION; INCRÉMENTATION
+        // réponse attendue: 0---1---2---3---4---5
+        for(let m = 0; m<= 4; m++){
+            document.write(m + "---");
+        }
+        document.write("5");
+        document.write("<br>");
+        
 
-            // *******************************
-            document.write("IF - ELSE IF - ELSE");
-            document.write("<br>");
-            // exercice (homme-femme-transgenre)
-            let reponse2 = prompt("Quel est votre genre?");
-            console.log(reponse2);
-            if(reponse2 == "homme"){
-                document.write("vous êtes un homme");
-            } else if (reponse2 == "femme"){
-                document.write("vous êtes une femme");
+        // *******************************
+        // (12) LES FONCTIONS PRÉDIFINIES
+        document.write("<h2>(12) Les Fonctions Prédifinies</h2>");
+        // Functions, ce sont des morceaux de code encapsulés qu'on appel au besoin pour exécuter une action prédifinie. Le document.write() permet de venir écrire sur notre page web. On distingue les fonctions prédéfinies des fonctions utilisateurs qui réalisées par le dev
+        let phrase = "Salut je m'appelle Eddy";
+        document.write(phrase + "<br>");
+
+        // ************* indexOf
+        document.write("indexOf: Eddy se trouve à la position : " + phrase.indexOf("Eddy") + "<br>");
+
+        // ************* toLowerCase
+        document.write("toLowerCase: " + phrase.toLowerCase() + "<br>");
+
+        // ************* toUpperCase
+        document.write("toUpperCase: " + phrase.toUpperCase() + "<br>");
+
+        // ************* .length
+        document.write("length: " + phrase.length + "<br>");
+
+
+        // *******************************
+        // (13) LES FONCTIONS UTILISATEURS
+        // fonctions user, sont des fonctions réalisées par le dév et ça associe des fonctions prédifinies ensemble de manière à créer une fonction personnalisée
+        document.write("<h2>(13) Les Fonctions Utilisateurs</h2>");
+        // Comment déclarer des fonctions?
+        // 1 - Function Statement
+        function maFonction(){
+            document.write("function-statement: We have a sunny day." + "<br>");
+        }
+        maFonction();
+
+        // 2 - Function Operator
+        let maFonction2 = function(){
+            document.write("function-operator: We have a heavy rainy day." + "<br>")
+        }
+        maFonction2();
+
+        // 3 - Function with Argument
+        function direBonjour(prenom){
+            document.write("<p>Bonjour " + prenom + ", bienvenue sur notre site !" + "</p>" + "<br>")
+        }
+        direBonjour("Alice");
+        // *************
+        let prenom4 = "Dave";
+        function direBonjour(prenom4){
+            document.write("<p>Bonjour " + prenom4 + ", bienvenue sur notre site !" + "</p>" + "<br>")
+        }
+        direBonjour(prenom4);
+
+
+        // *****************************************
+        // ************* (EXO: my answer)
+        function meteo(saison, temperature){
+            if(temperature == 0 || temperature == 1 || temperature == -1) {
+                document.write("Nous sommes en " + saison + " et il fait " + temperature + " degré.");
             } else {
-                document.write("vous êtes transgenre");
+                document.write("Nous sommes en " + saison + " et il fait " + temperature + " degrés.");
             }
-            document.write("<br>");
-            document.write("<br>");
+        }
+        meteo("hivers", -1);
+        document.write("<br>");
+        meteo("été", 40);
+        document.write("<br>");
+        meteo("printemps", 5);
+        document.write("<br>");
+        document.write("<br>");
+
+        // ************* (EXO: teacher LAURENT's answer)
+        let article;
+        let s;
+        function exoMeteo(saison1, temperature1){
+            if(saison1 == "printemps"){
+                article = "au ";
+            } else{
+                article = "en ";
+            }
+
+            if(temperature1 >1 || temperature1 <-1){
+                s = "s";
+            } else{
+                s = "";
+            }
+
+            document.write("Nous sommes " + article + saison1 + " et il fait " + temperature1 + " degré" + s + ".");
+        }
+        exoMeteo("hivers", -1);
+        document.write("<br>");
+        exoMeteo("été", 40);
+        document.write("<br>");
+        exoMeteo("printemps", 5);
+        document.write("<br>");
 
 
-            // *******************************
-            // (9) LES CONDITIONS
-            document.write("<h2>(9) Les opérateurs</h2>");
-            document.write("<br>");
-            // (==) même valeur
-            // (===) même valeur et même type, striectement égal
-            // (!=) renvoie TRUE si les opérandes pas égales
-            // (!==) renvoie TRUE si les opérandes pas égales, et pas même TYPE
-            // (>)  (<)  (>=)  (<=)
-            // Conclusion: une condition renvoie tjrs TRUE ou FALSE, et les instructions de la condition (le code situé dans els accolades) ne s'exécutent QUE si la condition renvoie TRUE.
-            // JavaScripot compte trois opérateurs logiques:
-                // - AND &&
-                // - OR ||
-                // - NOT !
+        // ******************************* (A REVOIR)
+        // (14) LA PORTÉE DES VARIABLES
+        document.write("<h2>(14) La Portée des Variables</h2>");
+        // selon l'endrpot où une variable est déclarée et affectée, celle-ci pourra être accessible (visible par la machine) de partout dans le script ou bien uniquement dans une portion confçinée de code. On parle de "portée" des variables
 
-            // 
+        // 1 - variable déclarée SANS LE MOT CLÉ (let, var), de manière IMPLICITE
+        // => VARIABLE GLOBAL
+        // peu importe l'endroit où elle est déclarée elle est accessible de PARTOUT DANS LE SCRIPT (n'importe quelle fonction du script peut faire appel à cette variable)
+
+        // 2 - variable déclarée AVVEC LE MOT CLÉ (let, var), de manière EXPLICITE
+        // => VARIABLE LOCALE
+        // à l'extérieur d'une fonction, elle sera GLOBALE, c'est-à-dire accessible de partout dans le script
+        // à l'intérieur d'une fonction, elle sera LOCALE, c'est-à-dire accessible uniquement dans la fonction
+
+        let animal = "Loup";
+        function jungle(){
+            // ici on déclare une var, dans la fonction, donc PORTÉE LOCALE
+            let animal = "Tigre";
+            console.log(animal);
+            document.write(animal + "<br>"); // sans document.write, "Tigre" ne s'affichera pas
+        }
+        document.write(animal + "<br>"); // Loup
+        jungle(); // Tigre
+        document.write(animal + "<br>" + "<hr>"); // Loup
 
 
 
-            document.write("<br>");
-            document.write("<br>");
-            document.write("<br>");
+        let animal1 = "Loup";
+        function jungle1(){
+            animal1 = "Tigre";
+        }
+        document.write(animal1 + "<br>"); // Loup, à ce stade je n'ai pas encore exécuter la fonction
+        jungle1(); // Ici, je demande l'exécution de ma fonction
+        document.write(animal1 + "<br>" + "<hr>"); // Tigre, car le contenu de la variable déclarée en ligne 526 a été remplcé lorsque j'ai exécuté la ligne 530
+
+
+        // *******************************
+        // (15) LES ARRAYS (des tableaux)
+        // les array permettent de conserver plusieurs valeurs au sein d'une même valeur
+        document.write("<h2>(15) Les ARRAYS</h2>");
+        let fruits = ["bananes", "oranges", "pommes", "cerises"];
+        // pour afficher les info présentes dans un tableau
+        document.write(fruits);
+        console.log(fruits);
+        document.write("<br>");
+
+        // pour afficher un des éléments de mon array par son numéro d'indice
+        document.write("<br>");
+        document.write(fruits[0]); // affiche bananes sur ma PAGE
+        document.write("<br>");
+        console.log(fruits[2]); // affiche pommes dans ma console
+
+        // tableau à deux dimensions, ou comment mettre un tableau dans un tableau
+        let deuxDimensions = [["fraises","melons","waxapples",],["tomates","carottes","courgettes"]];
+        document.write(deuxDimensions[1][1]);
+        document.write("<br>");
+        document.write(deuxDimensions[0][2]);
+        document.write("<br>");
+
+        // comment produire un tableau à l'aide d'une boucle?
+        let monTableau = ["Tom", "Whitney", "Rachel", "Ann", "David", "Josph", 123, true, false, "Kiki", "Isaac", "Koko", "Ulrich"];
+        for (let i=0; i<monTableau.length; i++) { // DÉPART; CONDITION; INCRÉMENTER;
+            document.write(monTableau[i]); 
+        }
+        console.log(monTableau);
+        document.write("<br>");
+
+        // il existe une boucle spéciale pour les arrays: FOR IN
+        for(let w in monTableau){
+            document.write(monTableau[w]);
+        }
+        document.write("<br>" + "<hr>");
+
+
+        // *****************************************
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
 
         </script>
-
     </body>
 </html>
 
