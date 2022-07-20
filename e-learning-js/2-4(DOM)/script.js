@@ -50,7 +50,7 @@ console.log("myName :", myName);
 
 
 // ----------------------------
-// querySelector
+// querySelector (INDEX n°, NO)
 var selection = document.querySelector(".form-control"); // this sends ONLY the 1st HTML element
 console.log("selection :", selection); // selection : input.form-control
 var selection = document.querySelector(".myDiv");
@@ -60,7 +60,7 @@ console.log("selection :", selection); // selection : li  => only the 1st "li"
 
 
 // ----------------------------
-// querySelectorAll
+// querySelectorAll (INDEX n°, YES)
 var selection2 = document.querySelectorAll("#querySelectorAll p");
 console.log("selection2 :", selection2); // selection2 : NodeList(3) [p, p, p]
 
