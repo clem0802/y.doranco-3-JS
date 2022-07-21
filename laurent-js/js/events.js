@@ -64,7 +64,7 @@ divQuatre.addEventListener("mouseout", function(){
 
 
 
-// -- (5) FOCUS (entrer)
+// -- (5) FOCUS (entrer-INPUT)
 // ------------------------------
 
 // 1ère étape, je sélectionne l'input
@@ -80,7 +80,7 @@ input1[0].addEventListener("focus", function(){
 
 
 
-// -- (6) BLUR (sortir)
+// -- (6) BLUR (sortir-INPUT)
 // ------------------------------
 // 1ère étape, je sélectionne le 2ème input 
 let input2 = document.getElementsByTagName("input");
