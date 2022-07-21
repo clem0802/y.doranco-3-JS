@@ -43,7 +43,7 @@ console.log("myUl :", myUl[0].getElementsByTagName("li"));
 
 // ----------------------------
 // Name
-var myName = document.getElementsByName("userName")
+var myName = document.getElementsByName("userName");
 console.log("myName :", myName); 
 // myName : NodeList [input.form-control]
 // a "NODE LIST" => a list of HTML elemetns

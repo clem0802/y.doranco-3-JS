@@ -4,29 +4,31 @@
 // div1: (MOUSEDOWN-MOUSEUP)
 // let jaune1 = document.getElementsByClassName("jaune");
 let btn = document.querySelector("#btn");
+let jaune1 = document.getElementsByClassName("jaune")[0];
 console.log("btn OK");
 // 2ème étape: construire addEventListener
 btn.addEventListener("mousedown", function(){
-    document.getElementsByClassName("jaune")[0].style.width = "80px";
-    console.log("La largeur de div1 s'est rétrécie à 80px");
+    jaune1.style.width = "100px";
+    console.log("La largeur de div1 s'est rétrécie à 100px");
 })
 btn.addEventListener("mouseup", function(){
-    document.getElementsByClassName("jaune")[0].style.width = "300px";
+    jaune1.style.width = "300px";
+    // jaune1.style.width = "";
     console.log("La largeur de div1 s'est rétablie à 300px");
 })
 
 // -----------------------------------------
 // div2:
 // 1ère étape: sélectionner l'élement sur lequel placer addEventListener
-let jaune2 = document.getElementsByClassName("jaune");
+let jaune2 = document.getElementsByClassName("jaune")[1];
 console.log("2ème div jaune affectée");
 // 2ème étape: construire addEventListener
-jaune2[1].addEventListener("dblclick", function(){
-    jaune2[1].style.backgroundColor = "purple";
+jaune2.addEventListener("dblclick", function(){
+    jaune2.style.backgroundColor = "purple";
     console.log("La couleur de la div2 changée en purple")
 });
-jaune2[1].addEventListener("mouseout", function(){
-    jaune2[1].style.backgroundColor = "yellow";
+jaune2.addEventListener("mouseout", function(){
+    jaune2.style.backgroundColor = "yellow";
     console.log("La couleur de la div2 s'est rétablie")
 });
 
