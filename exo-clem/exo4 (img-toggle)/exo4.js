@@ -1,8 +1,8 @@
 // clémence (réponse)
 
 
-// div1: (TOGGLE-IMG)
-// let jaune1 = document.getElementsByClassName("jaune");
+// (TOGGLE-IMG)
+// sélectionner l'élément où placer EVENT
 let btn = document.getElementById("changerImage");
 let img = document.getElementById("monImage");
 
