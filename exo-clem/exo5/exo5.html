@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2022.07.21 - EXO5-JS-"IMG-défilé CAROUSEL" - (Laurent)</title>
+        <meta name="description" content="Here I work on EXO5-JS-'IMG-défilé CAROUSEL', Laurent's JS exercises">
+        <link rel="stylesheet" href="exo5.css">
+    </head>
+
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+
+        <main>
+            <div>
+              <img src ='c.jpg' title ='description: plage deserte' id="monImage2">
+            </div>
+            <button id="changerImageTitre">Changer d'image et de title</button><br><br>
+            
+
+            <div>
+              <img id="caroussel" src="a.jpg" class="test">
+            </div>
+        </main>
+
+
+        <footer></footer>
+        <script src="exo5.js"></script>
+    </body>
+</html>
+
+<!--
+1ère étape : lorsque je clic sur le bouton "Changer d'image et de title" la première image doit changer ainsi que son title.
+2eme étape : Lorsque je clic sur la deuxième image, elle change plusieurs fois jusqu'à revenir à la première.
+INDICES : bien penser à sélectionner le btn, et les images car nous allons avoir besoin des 3 dans les addEventListener.
+- Pour le carousel, utilisez un switch ou un systeme de IF - ELSE pour provoquer le changement.
+- Pour le carousel, penser au fait qu'il faut récupérer la SRC de l'image PRESENTE à l'écran pour provoquer son changement. La logique du switch (ou du IF-ELSE) sera : SI je vois la SRC de l'image a, alors je passe à l'image b. Si lorsque je clic je vois la source de l'image b, je passe à l'image c etc etc jusqu'à revenir à la première.  
+-->
+

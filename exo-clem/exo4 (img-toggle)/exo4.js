@@ -2,13 +2,14 @@
 
 
 // (TOGGLE-IMG)
-// sélectionner l'élément où placer EVENT
-let btn = document.getElementById("changerImage");
+// 1ère étaped: sélectionner l'élément où placer EVENT
 let img = document.getElementById("monImage");
-
+console.log("img OK");
+let btn = document.getElementById("changerImage");
 console.log("btn OK");
+
 // 2ème étape: construire addEventListener
-btn.addEventListener("click", (event) =>{
+btn.addEventListener("click", (event)=>{
     if(img.src.match("img1.jpg")){
         img.src = "img2.jpg";
     } else{
@@ -16,7 +17,20 @@ btn.addEventListener("click", (event) =>{
     }
 });
 
+// btn.addEventListener("click", function(){
+//     if(img.src.match("img1.jpg")){
+//         img.src = "img2.jpg";
+//     } else{
+//         img.src = "img1.jpg";
+//     }
+// });
 
+
+// -----------------------------------------
+// réponse de Laurent (prof)
+// btn.addEventListener("click", function(){
+//     image.src = "img2.jpg";
+// });
 
 
 // -----------------------------------------
