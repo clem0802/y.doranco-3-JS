@@ -13,14 +13,19 @@ console.log("btn OK");
 btn.addEventListener("click", function(){
     if(img1.src.match("c.jpg")){
         img1.src = "d.jpg";
+        img1.setAttribute("title", "canoe at the shore"); 
     } else if(img1.src.match("d.jpg")){
         img1.src = "e.jpg";
+        img1.setAttribute("title", "porch at the sea"); 
     } else if(img1.src.match("e.jpg")){
         img1.src = "a.jpg";
+        img1.setAttribute("title", "red turtle"); 
     } else if(img1.src.match("a.jpg")){
         img1.src = "b.jpg";
+        img1.setAttribute("title", "white cat resting"); 
     } else{
         img1.src = "c.jpg";
+        img1.getAttribute("title"); 
     }
 });
 
@@ -46,3 +51,11 @@ img2.addEventListener("click", function(){
     }
 });
 
+
+// -----------------------------------------------(correction Laurent, prof)
+// laurent.v.couret@gmail.com
+// let btn = document.getElementById("changerImageTitre");
+// console.log(btn);
+
+// let image1 = document.getElementById("monImage2");
+// console.log(image1)
