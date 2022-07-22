@@ -1,0 +1,152 @@
+/* ------------------------ */
+body {
+    background-image: url("https://images.unsplash.com/photo-1463663090918-4d8338918803?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHN1bnNoaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Outfit", serif;
+}
+
+/* ------------------------ */
+hader {
+    margin-top: 10px;
+}
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #419608;
+    border-radius: 6px;
+}
+
+/* TOGGLE part */
+/* ------------------------ */
+.container-links {
+    width: 100%;
+}
+.container-links.show {
+    display: block;
+}
+.container-links.hide {
+    display: none;
+}
+.links {
+    padding: 8px 0 0 8px ;
+    width: 100%;
+    list-style-type: none;
+}
+.links li {
+    display: flex;
+    flex-direction: column;
+}
+.links a {
+    color: rgb(244, 235, 235);
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.links a:hover {
+    transition: transform 1s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+}
+.burger {
+    width: 10%;
+    font-size: 30px;
+    display: flex;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.burger.show {
+    display: block;
+}
+.burger.hide {
+    display: none;
+}
+.close {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    display: none;
+    color: rgb(244, 235, 235);
+    cursor: pointer;
+    font-weight: bold;
+}
+.close.show {
+    display: block;
+}
+.close.hide {
+    display: none;
+}
+
+/* ------------------------ */
+.main-container {
+    background-color: #ecf0f1;
+    width: 250px;
+    text-align: center;
+    padding: 3%;
+    border-radius: 12px;
+}
+h1 {
+    color: #34495e; 
+    font-weight: 700;
+}
+p {
+    color: hsl(217, 8%, 38%); 
+    font-weight: 400;
+    padding: 16px;
+}
+.roses-img {
+    border-radius: 12px;
+    height: 200px;
+    width: 200px;
+}
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 74%, 57%);
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERIES */
+/*----------------------------*/
+@media screen and (min-width: 500px) {
+    .links{
+      flex-direction: row;
+    }
+    .container-links{
+      display: block;
+      width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .roses-img {
+      height: 220px;
+      width: 220px;
+    }
+    .main-container {
+      width: 250px;
+      padding: 9%;
+    }
+}
+@media (max-width: 300px) {
+    .roses-img {
+      height: 180px;
+      width: 180px;
+    }
+    .main-container {
+      width: 250px;
+      padding: 12%;
+    }
+}

@@ -2,7 +2,7 @@
 // laurent.v.couret@gmail.com
 
 
-// (1) img en HAUT
+// (1) img en HAUT (ICI A REVOIR !!!)
 // 1ère étape: je sélectionne mes éléments HTML
 let btn = document.getElementById("changerImageTitre");
 console.log(btn);
