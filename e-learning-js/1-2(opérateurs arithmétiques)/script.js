@@ -1,4 +1,4 @@
-console.log("arithmetic operators");
+console.log("Arithmetic Operators");
 
 let add = 2+2;
 console.log(add); // 4

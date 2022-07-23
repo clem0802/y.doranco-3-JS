@@ -1,4 +1,4 @@
-console.log("Types and Objects");
+console.log("Types & Objects");
 
 // String
 let str = "my text";

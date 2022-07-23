@@ -1,4 +1,4 @@
-console.log("conditions");
+console.log("Conditions");
 
 // ------------------------------------
 let favoriteColor = prompt("What's your favorite color?");
