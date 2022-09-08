@@ -60,8 +60,8 @@ Dans le fichier `app.js` faire les consignes suivante :
    ```
 
 3. Grace à l'instruction [`document.querySelector`](https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector),
-   créé une constante `list` en séléctionant la class de la balise `li`.
-4. En utilisant la constante `list` ajouter la balise li grace à l'instruction [`li.appendChild`](https://developer.mozilla.org/fr/docs/Web/API/Node/appendChild)
+   créé une constante `ul` en séléctionant la class de la balise `ul`.
+4. En utilisant la constante `ul` ajouter la balise li grace à l'instruction [`ul.appendChild`](https://developer.mozilla.org/fr/docs/Web/API/Node/appendChild)
 
 ## (6) Création du bouton supprimer
 
