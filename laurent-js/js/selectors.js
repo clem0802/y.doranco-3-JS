@@ -21,7 +21,7 @@ let maBalise = document.getElementsByTagName("span");
 // attention ici on est en getElements avec un S, ce qui signifie que la machine s'attend à ce que potentioellement il y ait plusieurs éléments à sélectionner sur ma page. La machine va donc créer un tableau pour stocker ces éléments même si je n'en ai qu'un sur ma page web
 console.log(maBalise); 
 // HTMLCollection(3) [span, span, span]
-// HTMLCollection qui est en fait un tableauf (array)
+// HTMLCollection qui est en fait un tableau (array)
 console.log(maBalise[0].innerHTML); // Span 1
 console.log(maBalise[1].innerHTML); // Span 2
 console.log(maBalise[2].innerHTML); // Span 3
