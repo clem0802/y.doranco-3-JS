@@ -27,6 +27,5 @@ const ajouter2 = (x, y) => {
 // (4) fonction fléchée à 1 seule instruction
 const ajouter3 = (x, y) => x + y;
 console.log(additionner(2, 4)); // 6
-console.log(ajouter(2, 4)); // 6
 console.log(ajouter1(2, 4)); // 6
 console.log(ajouter2(2, 4)); // 6
