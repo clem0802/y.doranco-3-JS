@@ -48,7 +48,7 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 #burger_menu .bg-color-black {
-    background-color: black
+    background-color: black;
 }
 .toBeFaded {
     display: none;
@@ -99,11 +99,13 @@ header {
 }
 #scrolling_menu {
     display: none;
-    position: absolute;
+    /* !! position absolue pour sortir du flux */
+    position: absolute; 
     left: 0;
     top: 8vh;
     width: 100%;
-    background: white;
+    /* background: rgb(231, 228, 228); I changed here */
+    background-color: rgba(178, 199, 178, 0.6);
 }
 #scrolling_menu ul li {
     padding: 0.4rem;
@@ -111,6 +113,7 @@ header {
 #scrolling_menu ul li a {
     text-decoration: none;
     color: rgba(45, 52, 54, 1);
+    font-weight: bold;
     font-size: 0.8em;
 }
 #header_renting_part {
