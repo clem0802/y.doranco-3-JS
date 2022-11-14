@@ -58,8 +58,8 @@
                             <input type="date" placeholder="Drop-off date">
                         </div>
 
-                        <div id="submitPart">
-                            <input type="submit" value="Validate Search">
+                        <div id="submit-part">
+                            <input type="submit" value="Validate Search" method="post">
                         </div>
                     </form>
                 </div>
@@ -70,14 +70,14 @@
         <main class="flex flex-column align-center padding">
             <!-- (1) FIRST PART FILTER -->
             <div id="results" class="flex justify-between">
-                <p><span>7</span> Results</p>
+                <p> <span>7</span> Results</p>
                 <form action="https://public.herotofu.com/v1/d5377820-0cf0-11ed-9bdb-53c785fa3343">
                     <select name="filter" id="">
-                        <option value="Prder by price">Order by Price</option>
+                        <option value="Order by Price">Order by Price</option>
                         <option value="Small Cars">Small Cars</option>
                         <option value="Large Cars">Large Cars</option>
                         <option value="Premium Cars">Premium Cars</option>
-                        <option value="estate Cars">Estate Cars</option>
+                        <option value="Estate Cars">Estate Cars</option>
                     </select>
                 </form>
             </div>
@@ -305,9 +305,9 @@
         </main>
 
         
-        <footer class="flex justifuy-center">
+        <footer class="flex align-center flex-column">
             <img src="img/agence.png" alt="The Agency">
-            <ul>
+            <ul class="text-center">
                 <li><p>Our Agency</p></li>
                 <li><p>300 Bd de Vaugirard 75015 Paris</p></li>
                 <li><p>Opened 7/7 14h-20h</p></li>
