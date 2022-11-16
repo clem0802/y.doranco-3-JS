@@ -1,101 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>exo - JavaScript (Form-Control)</title>
-        <meta name="description" content="Here I work on JS (Form-Control), Doranco's JS exercise">
-    </head>
 
-    <body>
-        <form action="" id="myForm">
-            <span class="form_col">Sex :</span>
-            <label for=""><input type="radio" name="sex" value="M"/>Male</label>
-            <label for=""><input type="radio" name="sex" value="F"/>Female</label>
-            <!-- <label for=""><input type="radio" name="sex" value="T"/>Transgeder</label> -->
-            <span class="tooltip">Please select your gender</span>
-            <br/><br/>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>exo - JavaScript (Form-Control)</title>
+    <meta name="description" content="Here I work on JS (Form-Control), Doranco's JS exercise">
+  </head>
 
-            <label for="lastName" class="form_col">Last Name :</label>
-            <input type="text" name="lastName" id="lastName"/>
-            <span class="tooltip">A last name should contain at least 2 characters</span>
-            <br/><br/>
+  <body>
+    <form id="myForm">
 
-            <label for="firstName" class="form_col">First Name :</label>
-            <input type="text" name="firstName" id="firstName"/>
-            <span class="tooltip">A first name should contain at least 2 characters</span>
-            <br/><br/>
+      <span class="form_col">Sexe :</span>
+      <label><input name="sex" type="radio" value="M" />Male</label>
+      <label><input name="sex" type="radio" value="F" />Female</label>
+      <span class="tooltip">Please choose your gender</span>
+      <br/><br/>
 
-            <label for="login" class="form_col">Username :</label>
-            <input type="text" name="login" id="login"/>
-            <span class="tooltip">A username should contain at least 4 characters</span>
-            <br/><br/>
+      <label class="form_col" for="lastName">Last Name :</label>
+      <input name="lastName" id="lastName" type="text" />
+      <span class="tooltip">A last name should contain at least 2 characters</span>
+      <br/><br/>
 
-            <label for="age" class="form_col">Age :</label>
-            <input type="text" name="age" id="age">
-            <span class="tooltip">The number of age should be between 13 and 120</span>
-            <br><br>
+      <label class="form_col" for="firstName">First Name :</label>
+      <input name="firstName" id="firstName" type="text" />
+      <span class="tooltip">A first name should contain at least 2 characters</span>
+      <br/><br/>
 
-            <label for="pwd1" class="form_col">Password :</label>
-            <input type="password" name="pwd1" id="pwd1">
-            <span class="tooltip">A password should contain at least 6 characters</span>
-            <br/><br/>
+      <label class="form_col" for="age">Age :</label>
+      <input name="age" id="age" type="text" />
+      <span class="tooltip">The age should be between 13 and 120</span>
+      <br/><br/>
 
-            <label for="pwd2" class="form_col">Password (Confirmation) :</label>
-            <input type="password" name="pwd2" id="pwd2">
-            <span class="tooltip">The password confirmation must match your password</span>
-            <br/><br/>
+      <label class="form_col" for="login">Username :</label>
+      <input name="login" id="login" type="text" />
+      <span class="tooltip">A username should contain at least 4 characters</span>
+      <br/><br/>
 
-            <label for="country" class="form_col">Country :</label>
-            <select name="country" id="country">
-                <option value="none">Please choose your country of residence</option>
-                <option value="dz">Algeria</option>
-                <option value="ar">Argentina</option>
-                <option value="au">Australia</option>
-                <option value="at">Austria</option>
-                <option value="be">Belgium</option>
-                <option value="br">Brazil</option>
-                <option value="ca">Canada</option>
-                <option value="cn">China</option>
-                <option value="fr">France</option>
-                <option value="de">Germany</option>
-                <option value="ht">Haiti</option>
-                <option value="il">Israel</option>
-                <option value="it">Italy</option>
-                <option value="jp">Japan</option>
-                <option value="lt">Lithuania</option>
-                <option value="ml">Mali</option>
-                <option value="mx">Mexico</option>
-                <option value="ma">Marocco</option>
-                <option value="nz">New Zealand</option>
-                <option value="no">Norway</option>
-                <option value="qa">Qatar</option>
-                <option value="sn">Senegal</option>
-                <option value="sg">Singapore</option>
-                <option value="sp">Spain</option>
-                <option value="se">Sweden</option>
-                <option value="tw">Taiwan</option>
-                <option value="th">Thailand</option>
-                <option value="tr">Turkey</option>
-                <option value="uk">UK</option>
-                <option value="ua">Ukraine</option>
-                <option value="us">USA</option>
-                <option value="zw">Zimbabwe</option>
-            </select>
-            <span class="tooltip">You should choose your country of residence</span>
-            <br><br>
+      <label class="form_col" for="pwd1">Password :</label>
+      <input name="pwd1" id="pwd1" type="password" />
+      <span class="tooltip">A password should contain at least 6 characters</span>
+      <br/><br/>
 
-            <span class="form_col"></span>
-            <label><input type="checkbox" name="news"/>Subscribe to Newsletters</label>
-            <br/><br/>
+      <label class="form_col" for="pwd2">Password Confirmation :</label>
+      <input name="pwd2" id="pwd2" type="password" />
+      <span class="tooltip">The password confirmation must match your password</span>
+      <br/><br/>
 
-            <span class="form_col"></span>
-            <input type="submit" value="Submit the form"/>
-            <input type="reset" value="Reset the form"/>
-        </form>
+      
+      <label class="form_col" for="country">Country :</label>
+        <select name="country" id="country">
+          <option value="none">Please choose your country of residence</option>
+          <option value="dz">Algeria</option>
+          <option value="ar">Argentina</option>
+          <option value="au">Australia</option>
+          <option value="at">Austria</option>
+          <option value="be">Belgium</option>
+          <option value="br">Brazil</option>
+          <option value="ca">Canada</option>
+          <option value="cn">China</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="ht">Haiti</option>
+          <option value="il">Israel</option>
+          <option value="it">Italy</option>
+          <option value="jp">Japan</option>
+          <option value="lt">Lithuania</option>
+          <option value="ml">Mali</option>
+          <option value="mx">Mexico</option>
+          <option value="ma">Marocco</option>
+          <option value="nz">New Zealand</option>
+          <option value="no">Norway</option>
+          <option value="qa">Qatar</option>
+          <option value="sn">Senegal</option>
+          <option value="sg">Singapore</option>
+          <option value="sp">Spain</option>
+          <option value="se">Sweden</option>
+          <option value="tw">Taiwan</option>
+          <option value="th">Thailand</option>
+          <option value="tr">Turkey</option>
+          <option value="uk">UK</option>
+          <option value="ua">Ukraine</option>
+          <option value="us">USA</option>
+          <option value="zw">Zimbabwe</option>
+        </select>
+      <span class="tooltip">Please should choose your country of residence</span>
+      <br/><br/>
 
-        <script src="script.js"></script>
-    </body>
+      <span class="form_col"></span>
+      <label><input name="news" type="checkbox" />Subscribe to Newsletters</label>
+      <br/><br/>
+
+      <span class="form_col"></span>
+      <input type="submit" value="Submit the form" /> 
+      <input type="reset" value="Reset the form" />
+
+    </form>
+
+    <script src="script.js"></script>
+  </body>
 </html>
