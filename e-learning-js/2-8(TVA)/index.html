@@ -1,14 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>exo - JavaScript (types-objects)</title>
-    <meta name="description" content="Here I work on JS (types-objects), Doranco's JS exercise">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>exo - JavaScript (TVA-VAT & Calculate)</title>
+        <!-- VAT: English / TVA: French -->
+        <meta name="description" content="Here I work on JS (VAT Calculate), Doranco's JS exercise">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="salary-gross-net" id="vat">
+                    <div class="lead">Calculate a VAT</div>
+                    <div class="vat-calculator">
+                        <form action="" method="post">
+                            <table class="cellpadding5 percentage100">
+                                <thead>
+                                    <tr class="bottomGrayBorder">
+                                        <th>duty-free Amount (DF-HT)</th>
+                                        <th>&nbsp;</th>
+                                        <th>VAT Amount (VAT-TVA)</th>
+                                        <th>&nbsp;</th>
+                                        <th>tax-included Amount (TTC)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="borderBottomGray">
+                                        <th>
+                                            <div class="typing">
+                                                <!-- name=DF (duty free) -->
+                                                <!-- id=amountDF -->
+                                                <!-- class=input-calculate1 -->
+                                                <input type="tel" name="amountDF" id="amountDF" title="Type the Duty Free amount to calculate" value="0 €" class="chiffre input-calculate1">
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <span class="addition">+</span>
+                                        </td>
+                                        <td class="textAlignCenter">
+                                            <div class="typing">
+                                                <!-- name=VAT -->
+                                                <!-- id=amountVAT -->
+                                                <!-- class=input-calculate1 -->
+                                                <input type="tel" name="amountVAT" id="amountVAT" title="Type the VAT amount to calculate" value="0 €" class="chiffre input-calculate1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="equal">=</span>
+                                        </td>
+                                        <td class="textAlignCenter">
+                                            <div class="typing">
+                                                <!-- name=TTC -->
+                                                <!-- id=amountTTC -->
+                                                <!-- class=input-calculate1 -->
+                                                <input type="tel" name="amountTTC" id="amountTTC" title="Type the TTC amount to calculate" value="0 €" class="chiffre input-calculate1">
+                                            </div>
+                                            <div id="annualDifference"></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="borderBottomGray">
+                                        <td colspan="6">
+                                            <!-- gras=>bold -->
+                                            <span class="bold">Rate VAT</span>
+                                            <!-- class=tauxDeTva englobeCaseCadreTva -->
+                                            <div class="typing" title="type the VAT rate">
+                                                <!-- name=TTC -->
+                                                <!-- id=amountTTC -->
+                                                <!-- class=input-calculate1 -->
+                                                <input type="tel" name="rateVAT" id="rateVAT" title="Type the % charge" value="20 %" class="chiffre input-calculate1">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="borderBottomGray height60">
+                                        <td class="textAlignCenter percentage100" colspan="5"><br/>
+                                            <div class="applyRateVAT">
+                                                <input type="button" name="applyRateVAT" title="click to apply a VAT rate of 20 %"
+                                                  value="20 %" class="input-calculate1" />
+                                                <input type="button" name="applyRateVAT" title="click to apply a VAT rate of 10 %"
+                                                  value="10 %" class="input-calculate1" />
+                                                <input type="button" name="applyRateVAT"
+                                                  title="click to apply a VAT rate of 8.5 %" value="8.5 %" class="input-calculate1" />
+                                                <input type="button" name="aapplyRateVAT" title="click to apply a VAT rate of 7 %"
+                                                  value="7 %" class="input-calculate1" />
+                                                <input type="button" name="applyRateVAT"
+                                                  title="click to apply a VAT rate of 5.5 %" value="5.5 %" class="input-calculate1" />
+                                                <input type="button" name="applyRateVAT"
+                                                  title="click to apply a VAT rate of 19.6 %" value="19.6 %" class="input-calculate1" />
+                                                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+                                                  data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="vatTotal">
+                    <p class="introMsg">Click on any number to modify</p>
+                </div>
+            </div>
+        </header>
+        
+        <script src="script.js"></script>
+    </body>
 </html>
