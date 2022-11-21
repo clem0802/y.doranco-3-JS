@@ -13,10 +13,10 @@ function calculateVAT(typeAmountBeginning) {
     let amountTTC = formatInputValue(document.getElementById("amountTTC").value);
     let rateVAT = formatInputValue(document.getElementById("rateVAT").value);
 
-    // console.log("amount Duty Free :" + amountDF);
-    // console.log("amount VAT :" + amountVAT);
-    // console.log("amount TTC :" + amountTTC);
-    // console.log("rate VAT :" + rateVAT);
+    console.log("amount Duty Free :" + amountDF);
+    console.log("amount VAT :" + amountVAT);
+    console.log("amount TTC :" + amountTTC);
+    console.log("rate VAT :" + rateVAT);
 
     if (typeAmountBeginning == "rateVAT") {
         typeAmountBeginning = "amountDF";
@@ -68,7 +68,7 @@ function reInitInputTelValue(inputId, symbol) {
 }
 
 // ---------------------------------------------------
-// KEYUP
+// keyup
 let listInputTel = document.querySelectorAll("input[type='tel']");
 
 for (let i = 0; i < listInputTel.length; i++) {
@@ -90,7 +90,7 @@ for (let i = 0; i < listInputTel.length; i++) {
 }
 
 // ---------------------------------------------------
-// CLICK
+// click
 let listInputButton = document.querySelectorAll("input[type='button']");
 
 for (let i = 0; i < listInputButton.length; i++) {
