@@ -1,4 +1,6 @@
 console.log(Math.floor(Math.random()*100));
+console.log(Math.floor(Math.random()*8)); // random num between 0-7
+console.log(Math.floor(Math.random()*1000)); // random num between 0-999
 console.log(Math.floor(43.8)); // 43
 console.log(Math.ceil(43.8)); // 44
 console.log(Number.isInteger(2017)); // true
@@ -33,5 +35,6 @@ fahrenheit = Math.floor(fahrenheit);
 console.log(fahrenheit); // 80
 console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
 // The temperature is 80 degrees Fahrenheit.
+
 
 
