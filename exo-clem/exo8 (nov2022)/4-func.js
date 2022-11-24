@@ -51,6 +51,44 @@ function getFahrenheit(celsius) {
 let fahrenheit = getFahrenheit(15);
 console.log(fahrenheit); // 59 (more complicated)
 
-// ------------------------------------------
-// ------------------------------------------
-// ------------------------------------------
+// ------------------------------------------Anonymous Function
+const plantNeedsWater = function(day){
+  if(day === "Wednesday"){
+    return true;
+  } return false;
+}
+console.log(plantNeedsWater('Tuesday')); // false
+
+// ------------------------------------------Arrow Function
+const needsWater1 = function(day) {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+}; 
+// (changed to arrow function)
+const needsWater2 = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// ZERO PARAMETER
+const functionName1 = () => {};
+// ONE PARAMETER
+const functionName2 = parameter => {};
+// TWO or MORE PARAMETER
+const functionName3 = (parameter1, parameter2) => {};
+
+
+// ------------------------------------------make it CONCISE !!
+const plantWater1 = (day) => {
+  return day === "Thursday" ? true : false;
+}
+// make it CONCISE:
+const plantWater2 = day => day === "Thursday" ? true : false;
+
+
