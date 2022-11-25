@@ -76,10 +76,13 @@ const needsWater2 = (day) => {
   }
 };
 
+
 // ZERO PARAMETER
 const functionName1 = () => {};
+// -------------
 // ONE PARAMETER
 const functionName2 = parameter => {};
+// -------------
 // TWO or MORE PARAMETER
 const functionName3 = (parameter1, parameter2) => {};
 
