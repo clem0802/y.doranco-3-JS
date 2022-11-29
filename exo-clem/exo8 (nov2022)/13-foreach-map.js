@@ -1,3 +1,5 @@
+// .forEach() is used to execute the same code on every element in an array 
+// but does not change the array and returns UNDEFINED
 // ------------------------------------------(iterate) - (forEach-1)
 const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro'];
 artists.forEach(artist => {
