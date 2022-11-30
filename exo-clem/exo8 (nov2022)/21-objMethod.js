@@ -1,4 +1,4 @@
-// ------------------------------------------------------ (1) (OBJECT-METHOD)
+// ------------------------------------------------------ (1) (object: METHOD)
 // We can include methods in our object literals 
 // by creating ordinary, colon-separated key-value pairs
 // The key serves as our method’s name, 
@@ -22,7 +22,7 @@ const alienShip2 = {
 alienShip2.invade(); 
 
 
-// ------------------------------------------------------ (2) (OBJECT-METHOD)
+// ------------------------------------------------------ (2) (object: METHOD)
 let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
 const alienShip3 = {
     retreat(){
